@@ -1,5 +1,5 @@
 ```mermaid
-sequenceDiagram
+sequenceDiagram;
     participant browser
     participant server
 
@@ -23,12 +23,9 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    // Note right of the browser: The browser starts executing the JavaScript code that fetches the JSON from the server
-
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: the raw data
     deactivate server
 
-    // Note right of the browser: The browser executes the callback function that renders the notes
 ```
